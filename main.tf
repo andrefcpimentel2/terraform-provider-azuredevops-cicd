@@ -23,9 +23,9 @@ resource "azuredevops_serviceendpoint_github" "github_serviceendpoint" {
 
 resource "azuredevops_build_definition" "nightly_build" {
   project_id      = azuredevops_project.project.id
-  agent_pool_name = var.
-  name            = var.
-  path            = var.
+  agent_pool_name = var.agent_pool_name
+  name            = var.build_definition_name
+  path            = var.build_definition_path
 
   repository {
     repo_type             = var.repo_type
