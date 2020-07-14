@@ -58,8 +58,5 @@ description = ""
 default = ".azdo/azure-pipeline-nightly.yml"
 }
 
-
-yml_path
-
 variable "Github_personalAccessToken" {
 }
