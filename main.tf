@@ -8,7 +8,7 @@ provider "azuredevops" {
 
 resource "azuredevops_project" "project" {
   project_name       = var.project_name
-  visibility         = var.visibility
+  visibility         = var.project_visibility
   version_control    = var.version_control
   work_item_template = var.work_item_template
 }
