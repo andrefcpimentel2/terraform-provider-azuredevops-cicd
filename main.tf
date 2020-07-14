@@ -17,7 +17,7 @@ resource "azuredevops_serviceendpoint_github" "github_serviceendpoint" {
   project_id            = azuredevops_project.project.id
   service_endpoint_name = var.service_endpoint_name
   auth_personal {
-    personalAccessToken = var.Github_personalAccessToken
+    personal_access_token = var.Github_personalAccessToken
   }
 }
 
