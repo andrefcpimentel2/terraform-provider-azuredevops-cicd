@@ -35,3 +35,7 @@ resource "azuredevops_build_definition" "nightly_build" {
     service_connection_id = azuredevops_serviceendpoint_github.github_serviceendpoint.id
   }
 }
+
+output "project_name" {
+  value = azuredevops_project.project.project_name
+}
