@@ -2,6 +2,12 @@
 
 # Simple GitHub based CICD
 This sample provisions the following infrastructure:
+You need to configure the Variables to this project such as:
+
+* Project name
+* Pipeline external config (Currently Github only)
+* Github_personalAccessToken for fetching the external pipeline config
+
 
 # AzDO project
 AzDO build definition that points to .azdo/azure-pipeline-nightly.yml
