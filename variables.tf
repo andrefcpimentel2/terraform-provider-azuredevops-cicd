@@ -13,6 +13,11 @@ description = ""
 default = "Git"
 }
 
+variable "repo_name" {
+description = "Repository name for Project"
+default = ""
+}
+
 variable "work_item_template" {
 description = ""
 default = "Agile"
