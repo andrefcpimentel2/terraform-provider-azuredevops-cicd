@@ -1,6 +1,6 @@
 variable "project_name" {
 description = "Name for AZ Devops Project"
-default = "IPO-test"
+default = ""
 }
 
 variable "project_visibility" {
@@ -59,4 +59,20 @@ default = ".azdo/azure-pipeline-nightly.yml"
 }
 
 variable "Github_personalAccessToken" {
+}
+
+
+variable "policy_reviewer_count" {
+
+  default = 2
+}
+
+variable "enable_repo_build_policy" {
+
+  default = true
+}
+
+variable "enable_repo_build_reviewers" {
+
+  default = true
 }
