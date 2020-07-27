@@ -41,7 +41,7 @@ resource "azuredevops_build_definition" "nightly_build" {
 
 resource "azuredevops_git_repository" "repo" {
   project_id = azuredevops_project.project.id
-  name       = "Sample_clone"
+  name       = var.repo_name
   # parent_id  = data.azuredevops_git_repositories.single_repo.id
   initialization {
     init_type = "Clean"
